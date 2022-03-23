@@ -1,0 +1,13 @@
+<% require 'bootstrap-sass'%>
+<%= @message %>
+<form action="/newUser" method="POST" accept-charset="UTF-8" >
+  <label for="username">Digite seu novo user</label>
+  <br/>
+  <input id="username" name="username" type="text" />
+  <br/>
+  <label for="password">Digite sua nova senha</label>
+  <br/>
+  <input id="password" name="password" type="password" />
+  <br/>
+  <input name="commit" type="submit" value="Search" data-disable-with="Search" />
+</form>
